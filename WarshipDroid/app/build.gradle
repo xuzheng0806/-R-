@@ -1,0 +1,31 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.warship.droid'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.warship.droid"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "3.1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation project(':core')
+}
